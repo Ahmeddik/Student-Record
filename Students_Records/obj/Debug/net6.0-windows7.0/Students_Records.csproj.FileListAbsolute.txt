@@ -14,3 +14,12 @@ C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debu
 C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\net6.0-windows7.0\Students_Records.pdb
 C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\net6.0-windows7.0\Students_Records.genruntimeconfig.cache
 C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\net6.0-windows7.0\ref\Students_Records.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\net6.0-windows7.0\Students_Records.sourcelink.json
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\net6.0-windows7.0\Students_Records.csproj.AssemblyReference.cache
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\bin\Debug\net6.0-windows7.0\System.Data.SqlClient.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\bin\Debug\net6.0-windows7.0\runtimes\win-arm64\native\sni.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\bin\Debug\net6.0-windows7.0\runtimes\win-x64\native\sni.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\bin\Debug\net6.0-windows7.0\runtimes\win-x86\native\sni.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\bin\Debug\net6.0-windows7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\bin\Debug\net6.0-windows7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\net6.0-windows7.0\Students.6EEA22B7.Up2Date
