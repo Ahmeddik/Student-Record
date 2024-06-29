@@ -1,0 +1,6 @@
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\netcoreapp3.1\Students_Records.Form1.resources
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\netcoreapp3.1\Students_Records.csproj.GenerateResource.cache
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\netcoreapp3.1\Students_Records.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\netcoreapp3.1\Students_Records.AssemblyInfoInputs.cache
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\netcoreapp3.1\Students_Records.AssemblyInfo.cs
+C:\Users\asedd\Downloads\Video\ITI\sql project\project\Students_Records\obj\Debug\netcoreapp3.1\Students_Records.csproj.CoreCompileInputs.cache
