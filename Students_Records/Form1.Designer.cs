@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button1 = new Button();
             dateOfBirthPicker = new DateTimePicker();
             label7 = new Label();
             registerButton = new Button();
@@ -46,23 +47,18 @@
             panel2 = new Panel();
             button4 = new Button();
             button3 = new Button();
-            dataGridView1 = new DataGridView();
-            FirstName = new DataGridViewTextBoxColumn();
-            LastName = new DataGridViewTextBoxColumn();
-            Email = new DataGridViewTextBoxColumn();
-            Grade = new DataGridViewTextBoxColumn();
-            Section = new DataGridViewTextBoxColumn();
-            DateOfBirth = new DataGridViewTextBoxColumn();
+            studentTable = new DataGridView();
             button2 = new Button();
             textBox6 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)studentTable).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ControlDark;
+            panel1.Controls.Add(button1);
             panel1.Controls.Add(dateOfBirthPicker);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(registerButton);
@@ -82,15 +78,27 @@
             panel1.Size = new Size(634, 715);
             panel1.TabIndex = 0;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkOrange;
+            button1.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ButtonFace;
+            button1.Location = new Point(313, 638);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 13;
+            button1.Text = "Update";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
             // dateOfBirthPicker
             // 
+            dateOfBirthPicker.CustomFormat = "MM-dd-yyyy";
+            dateOfBirthPicker.Format = DateTimePickerFormat.Custom;
             dateOfBirthPicker.Location = new Point(191, 554);
             dateOfBirthPicker.Name = "dateOfBirthPicker";
             dateOfBirthPicker.Size = new Size(371, 31);
             dateOfBirthPicker.TabIndex = 12;
-            dateOfBirthPicker.Format = DateTimePickerFormat.Custom;
-            dateOfBirthPicker.CustomFormat = "MM-dd-yyyy";
-            //dateOfBirthPicker.ValueChanged += dateOfBirthPicker_ValueChanged;
             // 
             // label7
             // 
@@ -107,6 +115,7 @@
             // registerButton
             // 
             registerButton.BackColor = Color.Cyan;
+            registerButton.Font = new Font("Segoe UI Black", 9F, FontStyle.Bold, GraphicsUnit.Point);
             registerButton.Location = new Point(450, 638);
             registerButton.Name = "registerButton";
             registerButton.Size = new Size(112, 34);
@@ -194,6 +203,7 @@
             fNameBox.Name = "fNameBox";
             fNameBox.Size = new Size(371, 31);
             fNameBox.TabIndex = 1;
+            fNameBox.TextChanged += fNameBox_TextChanged;
             // 
             // label1
             // 
@@ -210,7 +220,7 @@
             panel2.BackColor = SystemColors.ActiveCaption;
             panel2.Controls.Add(button4);
             panel2.Controls.Add(button3);
-            panel2.Controls.Add(dataGridView1);
+            panel2.Controls.Add(studentTable);
             panel2.Controls.Add(button2);
             panel2.Controls.Add(textBox6);
             panel2.Location = new Point(638, 0);
@@ -227,6 +237,7 @@
             button4.TabIndex = 13;
             button4.Text = "Edit";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button3
             // 
@@ -237,61 +248,18 @@
             button3.TabIndex = 13;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
-            // dataGridView1
+            // studentTable
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { FirstName, LastName, Email, Grade, Section, DateOfBirth });
-            dataGridView1.Location = new Point(3, 155);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(615, 477);
-            dataGridView1.TabIndex = 14;
-            // 
-            // FirstName
-            // 
-            FirstName.HeaderText = "First Name";
-            FirstName.MinimumWidth = 8;
-            FirstName.Name = "FirstName";
-            FirstName.Width = 150;
-            // 
-            // LastName
-            // 
-            LastName.HeaderText = "Last Name";
-            LastName.MinimumWidth = 8;
-            LastName.Name = "LastName";
-            LastName.Width = 150;
-            // 
-            // Email
-            // 
-            Email.HeaderText = "Email";
-            Email.MinimumWidth = 8;
-            Email.Name = "Email";
-            Email.Width = 150;
-            // 
-            // Grade
-            // 
-            Grade.HeaderText = "Grade";
-            Grade.MinimumWidth = 8;
-            Grade.Name = "Grade";
-            Grade.Width = 150;
-            // 
-            // Section
-            // 
-            Section.HeaderText = "Section";
-            Section.MinimumWidth = 8;
-            Section.Name = "Section";
-            Section.Width = 150;
-            // 
-            // DateOfBirth
-            // 
-            DateOfBirth.HeaderText = "Date Of Birth";
-            DateOfBirth.MinimumWidth = 8;
-            DateOfBirth.Name = "DateOfBirth";
-            DateOfBirth.Width = 150;
-            //DateOfBirth.Format = DateTimePickerFormat.Custom;
-            //DateOfBirth.CustomFormat = "MM-dd-yyyy";
+            studentTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            studentTable.Location = new Point(3, 155);
+            studentTable.Name = "studentTable";
+            studentTable.RowHeadersWidth = 62;
+            studentTable.RowTemplate.Height = 33;
+            studentTable.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            studentTable.Size = new Size(615, 477);
+            studentTable.TabIndex = 14;
             // 
             // button2
             // 
@@ -325,7 +293,7 @@
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)studentTable).EndInit();
             ResumeLayout(false);
         }
 
@@ -349,14 +317,9 @@
         private DateTimePicker dateOfBirthPicker;
         private Button button2;
         private TextBox textBox6;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn FirstName;
-        private DataGridViewTextBoxColumn LastName;
-        private DataGridViewTextBoxColumn Email;
-        private DataGridViewTextBoxColumn Grade;
-        private DataGridViewTextBoxColumn Section;
-        private DataGridViewTextBoxColumn DateOfBirth;
+        private DataGridView studentTable;
         private Button button4;
         private Button button3;
+        private Button button1;
     }
 }
