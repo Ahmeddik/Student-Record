@@ -184,5 +184,15 @@ namespace Students_Records
 
             }
         }
+
+        private void sectionBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emailBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
