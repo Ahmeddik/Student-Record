@@ -37,7 +37,7 @@ namespace Students_Records
             DataTable table = Student.getAll();
             studentTable.DataSource = table;
         }
-
+        //regist button
         private void registerButton_Click(object sender, EventArgs e)
         {
             Student newStudent = new Student();
@@ -88,7 +88,7 @@ namespace Students_Records
         {
 
         }
-
+        //edit button 
         private void button4_Click(object sender, EventArgs e)
         {
             if (studentTable.SelectedRows.Count > 0)
@@ -115,6 +115,7 @@ namespace Students_Records
             }
         }
 
+        //update button
         private void button1_Click(object sender, EventArgs e)
         {
             if (currentID != 0)
@@ -160,7 +161,7 @@ namespace Students_Records
 
             }
         }
-
+        //delete button
         private void button3_Click(object sender, EventArgs e)
         {
             if (studentTable.SelectedRows.Count > 0)
@@ -191,6 +192,16 @@ namespace Students_Records
         }
 
         private void emailBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studentTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

@@ -96,7 +96,7 @@ namespace Students_Records
 
         public static DataTable getAll()
         {
-            string sql = "SELECT StudentID, FirstName,LastName,Email,Grade,Section,DateOfBirth,DateOfJoin FROM student";
+            string sql = "SELECT StudentID, FirstName,LastName,Email,Grade,Section,DateOfBirth FROM student";
             SqlConnection con = new DBConnection().openConection();
             SqlDataAdapter adapter = new SqlDataAdapter(sql, con);
             DataTable table = new DataTable();
